@@ -13,7 +13,7 @@ The same app built by Google's tools using Gemini 4 Argon only, in its own repo.
 _Avoid_: Gemini version, rebuild, copy
 
 **Starting Spec**:
-The only project input the Challenger Build gets: the Reference Build's v1 spec (Spec #1), copied word for word.
+The only project input the Challenger Build gets: the Reference Build's v1 spec (Spec #1) plus the glossary and two ADRs it links, all as they stood before any code was written.
 _Avoid_: brief, prompt, requirements
 
 **Run**:
@@ -21,8 +21,12 @@ One build from the Starting Spec to a reviewed app, following the Workflow.
 _Avoid_: attempt, session
 
 **Workflow**:
-The fixed skill sequence a Run follows: to-tickets, then each ticket built test-first with tdd, then ponytail-review.
+The fixed skill sequence a Run follows: to-tickets, then each ticket built with implement (test-first, then code-review), then one ponytail-review round and its fixes.
 _Avoid_: process, pipeline
+
+**Intervention**:
+A human message that corrects, unblocks or redirects the agent. Answering a question the agent asked, or saying go, approve or merge, is not one.
+_Avoid_: help, nudge
 
 **Acceptance Check**:
 The hard pass/fail test: the Challenger Build's Internal GTIN encoder must match every pair in the Reference Build's shared test-case file.

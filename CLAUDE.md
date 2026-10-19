@@ -17,3 +17,9 @@ Default five-role vocabulary: needs-triage, needs-info, ready-for-agent, ready-f
 ### Domain docs
 
 Single-context: root `GLOSSARY.md` + `docs/adr/`, both created when first needed. See `docs/agents/domain.md`.
+
+## Layout
+
+- `challenger-kit/`: the Challenger repo's starting files (Reference Build at `bb238d9`, `AGENTS.md`, Spec #1 with links moved to the Challenger repo)
+- `docs/challenger-setup.md`: how to run the Challenger Build in Antigravity CLI
+- `runs/`: one run log per build
