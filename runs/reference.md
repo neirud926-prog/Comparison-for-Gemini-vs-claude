@@ -22,6 +22,10 @@ Repo: `neirud926-prog/Tiny-2Dcode-Printing-App`. Tool: Claude Code cloud session
 - Cost: the Sonnet session reports US$5.74. The Opus session's record can't be reached from the comparison session, so its cost is unknown.
 - Interventions: unknown. The Opus session's transcript can't be reached from here; fill in from memory if you can.
 
+## Phone use
+
+Both sessions were started from the Claude iOS app and ran in Anthropic's cloud.
+
 ## Result
 
 - Acceptance Check: passes by definition (the test-case file comes from this build).

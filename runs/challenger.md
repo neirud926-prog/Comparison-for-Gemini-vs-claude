@@ -8,6 +8,10 @@ Fill one row per ticket as it closes. Quote every Intervention word for word in 
 |---|---|---|---|---|---|---|---|
 | to-tickets (from Spec #1) | | | | | | | |
 
+## Phone use (Remote Control)
+
+What worked from the phone, what needed the PC, notification delays.
+
 ## Interventions
 
 ## Skill Misfires

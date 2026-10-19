@@ -24,6 +24,10 @@ _Avoid_: attempt, session
 The fixed skill sequence a Run follows: to-tickets, then each ticket built with implement (test-first, then code-review), then one ponytail-review round and its fixes.
 _Avoid_: process, pipeline
 
+**Run Guide**:
+The document the Challenger Build's agent follows to drive the Workflow itself, where the Reference Build's human typed each step.
+_Avoid_: playbook, script
+
 **Intervention**:
 A human message that corrects, unblocks or redirects the agent. Answering a question the agent asked, or saying go, approve or merge, is not one.
 _Avoid_: help, nudge

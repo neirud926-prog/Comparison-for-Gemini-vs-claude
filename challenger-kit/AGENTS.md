@@ -20,6 +20,10 @@ Single-context: root `GLOSSARY.md` + `docs/adr/`, both created when first needed
 
 Project skills are in `.agents/skills/` (Matt Pocock's skills v1.3.1 and ponytail). Some say "call the Skill tool" or "dispatch a sub-agent": load that skill, or use `invoke_subagent`.
 
+## Building the app
+
+**The Run** (tickets from the spec, building them, the review round): follow `docs/agents/run.md`.
+
 ## Rules
 
 - Never open, clone, search or fetch anything from `neirud926-prog/Tiny-2Dcode-Printing-App`. This repo is built from its spec alone.

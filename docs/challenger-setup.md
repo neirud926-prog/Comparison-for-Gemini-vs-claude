@@ -57,15 +57,17 @@ The repo now matches the Reference Build's state just before any code: commit `b
 2. `/model` → **Gemini 4 Argon**, thinking level **High**. The choice is kept across sessions, but check it at the start of every session: Antigravity also offers Claude Opus 5.5 and Sonnet 5.5, and using them would void the Run.
 3. `/skills`: expect 33 project skills. If some are missing, note the names as Skill Misfires.
 4. `/usage`: write the starting quota into `runs/challenger.md`.
+5. Phone: in a second terminal on the PC run `agy remote-control start` (a background service; `agy remote-control status` shows the machine's name, `agy remote-control stop` ends it). On the phone, open https://antigravity.google.com, sign in with the same Google account, pick the machine, and add the page to the home screen for push notifications. Keep the PC awake for the whole Run.
 
 ## 5. The Run (same Workflow as the Reference Build)
 
-Prompts to type, in order. Answer the agent's questions normally; anything beyond that is an Intervention, so log it.
+The agent drives the Workflow itself from the Run Guide, `docs/agents/run.md` in the Challenger repo: `/to-tickets` on issue #1, `/implement` each ticket (`tdd`, then `code-review`), push, then one `/ponytail-review` round and its fixes. Start it with one prompt, from the PC or the phone:
 
-1. `/to-tickets` Spec is issue #1.
-2. For each ticket, in the order the tickets allow: `/implement #<n>`. That skill runs `tdd`, then `code-review`, then commits. Push and close the ticket the way the agent proposes.
-3. When every v1 ticket is closed: `/ponytail-review` the whole app.
-4. Turn its findings into one spec and tickets (`/to-spec`, then `/to-tickets`), and `/implement` each of them.
+```
+Build this app: follow docs/agents/run.md, starting at step 1.
+```
+
+Answer the agent's questions normally; anything beyond that is an Intervention, so log it. If a session ends mid-Run, start the next one with `Continue the Run in docs/agents/run.md from where the issues show it stopped.`
 
 After each ticket:
 
